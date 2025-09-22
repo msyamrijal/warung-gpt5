@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Daftar Program IELTS — Interaktif</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>Daftar Program IELTS</h1>
+      <p class="lead">Versi santai dan terstruktur — cari, filter, dan ekspor program ke CSV.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="controls">
+      <input id="search" type="search" placeholder="Cari program, kata kunci, atau harga..." />
+
+      <select id="categoryFilter">
+        <option value="all">Semua Kategori</option>
+        <option value="whv">WHV</option>
+        <option value="akademis">Akademis</option>
+        <option value="online">Online</option>
+        <option value="offline">Offline</option>
+        <option value="intensif">Intensif</option>
+        <option value="fast-track">Fast-Track</option>
+        <option value="simulation">Simulation</option>
+      </select>
+
+      <select id="modeFilter">
+        <option value="all">Semua Mode</option>
+        <option value="online">Online</option>
+        <option value="offline">Offline</option>
+        <option value="hybrid">Hybrid</option>
+        <option value="private">Private</option>
+      </select>
+
+      <button id="exportCsv">Ekspor CSV</button>
+    </section>
+
+    <section id="programList" class="grid"></section>
+  </main>
+
+  <footer class="container footer">
+    <small>Made with ♥ — Hubungi admin untuk detail jadwal & pendaftaran.</small>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
